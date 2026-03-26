@@ -21,15 +21,18 @@ SSML Support
   
 2. Creating an IAM role:
    
-    Role Name: PollyTranslationRole
+    Role Name:
    
-    Policies: AmanzonPollyFullAccess
+              PollyTranslationRole
+   
+    Policies:
+              AmanzonPollyFullAccess
    
               AmazonS3FullAccess
    
               AWSLambdaBasicExecutionRole.
 
-3. Creating a source & Destination S3
+4. Creating a source & Destination S3
 
   Buckets:
   
@@ -40,10 +43,3 @@ SSML Support
 4. Writing Lambda function code:
 
     [lambda-function.py](https://github.com/user-attachments/files/26266047/lambda-function.py)
-
-    except Exception as e:
-        print("Error:", str(e))
-        return {
-            "statusCode": 500,
-            "body": json.dumps({"error": str(e)})
-        }
