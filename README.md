@@ -38,7 +38,7 @@ SSML Support
   
     Source S3 Bucket Name: twy-polly-text-files-storage-bucket-11
     
-    Destination S3 Bucket Name: twy-polly-audio-files-storage-bucket-1
+    Destination S3 Bucket Name: twy-polly-audio-files-storage-bucket-11
 
 4. Writing Lambda function code:
 
