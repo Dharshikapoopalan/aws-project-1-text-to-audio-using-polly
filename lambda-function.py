@@ -13,7 +13,7 @@ def lambda_handler(event, context):  # This name is required
         file_key = record["object"]["key"]
 
         # Read text file
-        obj = s3.get_object(Bucket="twy-polly-text-files-storage-bucket-1", Key=file_key)
+        obj = s3.get_object(Bucket="twy-polly-text-files-storage-bucket-11", Key=file_key)
         text = obj["Body"].read().decode("utf-8")
 
         # Convert text -> speech
@@ -34,7 +34,7 @@ def lambda_handler(event, context):  # This name is required
 
         # Upload audio to destination bucket
         s3.put_object(
-            Bucket="twy-polly-audio-files-storage-bucket-1",
+            Bucket="twy-polly-audio-files-storage-bucket-11",
             Key=audio_key,
             Body=audio_bytes,
             ContentType="audio/mpeg",
