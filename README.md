@@ -36,7 +36,7 @@ SSML Support
 
   Buckets:
   
-    Source S3 Bucket Name: twy-polly-text-files-storage-bucket-1
+    Source S3 Bucket Name: twy-polly-text-files-storage-bucket-11
     
     Destination S3 Bucket Name: twy-polly-audio-files-storage-bucket-1
 
