@@ -41,5 +41,10 @@ SSML Support
     Destination S3 Bucket Name: twy-polly-audio-files-storage-bucket-11
 
 4. Writing Lambda function code:
+   while creating lambda function need to attach the IAM role that you have already created. 
 
     [lambda-function.py](https://github.com/user-attachments/files/26266047/lambda-function.py)
+   While adding trigger select only PUT and .txt extension
+   While adding destination bucket just change SNS topic to s3 bucket 
+
+   
