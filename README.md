@@ -26,7 +26,7 @@ SSML Support
               PollyTranslationRole
    
     Policies:
-              AmanzonPollyFullAccess
+              AmazonPollyFullAccess
    
               AmazonS3FullAccess
    
